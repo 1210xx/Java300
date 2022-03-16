@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第一个表单</title>
+</head>
+<body>
+	<pre>method:请求方式 get/post
+	get:数据量小，安全性不高
+	post:量大，安全性相对较高
+	action:请求的服务器路径
+	id:用户的浏览器区分唯一，js中使用
+	name:名称，后端（服务器）区分唯一性，获取值
+	只要提交给后台，必须存在name
+	</pre>
+	<form method = "post" action = "http://localhost:8889/index.html" >
+		用户名:<input type="text" name="uname" id="uname" />
+		密码:<input type="password" name="pwd" id="pwd" />
+		兴趣:<input type="checkbox" name="fav" value="0" /> 篮球
+		<input type="checkbox" name="fav" value="1" /> 足球
+		<input type="checkbox" name="fav" value="2" /> 乒乓球
+
+		<input type="submit" value="登陆" >
+	</form>
+</body>
+</html>
